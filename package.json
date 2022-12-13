@@ -1,0 +1,19 @@
+{
+  "name": "speech",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/speech": "^5.1.0",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "json2csv": "^5.0.7",
+    "sox": "^0.1.0"
+  }
+}

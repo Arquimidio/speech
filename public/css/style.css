@@ -1,0 +1,86 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+input {
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    width: 100px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+
+.styled-table {
+    border-collapse: collapse;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 70vw;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 2rem 0;
+    max-width: 600px;
+}
+
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    font-size: 1.3rem;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tr:focus-within {
+    background-color: #c5f3d4 !important;
+}
+
+.btn {
+    padding: 0.5rem 2rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    border: none;
+    font-weight: bolder;
+    cursor: pointer;
+    position: relative;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.btn.recording::before {
+    position: absolute;
+    content: "";
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+}
